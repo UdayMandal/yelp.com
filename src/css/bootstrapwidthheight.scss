@@ -1,0 +1,47 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+
+$i: 0;
+@while $i < 100 {
+	$val: auto;
+	$k: $val;
+	@if $i != 0 {
+		$val: unquote(($i)+'%');
+		$k: $i;
+	}
+	.w-#{$k}{
+		width: $val;
+	}
+	.h-#{$k}{
+		height: $val;
+	}
+	$i: $i + 5;
+}
+
+@each $key, $size in $grid-breakpoints {
+	@media (min-width: $size) {
+		$i: 0;
+		@while $i <= 100 {
+			$val: auto;
+			$k: $val;
+			@if $i != 0 {
+				$val: unquote(($i)+'%');
+				$k: $i;
+			}
+
+			.w-#{$key}-#{$k}{
+				width: $val;
+			}
+			.h-#{$key}-#{$k}{
+				height: $val;
+			}
+			$i: $i + 5;
+		}
+	}
+}

@@ -1,0 +1,206 @@
+
+//carousel
+.navbar{
+    position:absolute;
+    width:100%;
+    z-index:10;
+    max-width:100%;
+}
+.ycarousel, .carousel-img {
+    height: 100vh;
+    width: 100%;
+}
+.ycarousel-item {
+    height:100%;    
+}
+
+@keyframes demo {
+    from {
+        left: 0px;
+        top: 0px;
+        background: rgba(83, 140, 238, .2);
+        border-color: rgb(83, 140, 238);
+    }
+
+    to {
+        left: 150px;
+        top: 0px;
+        background: rgba(235, 95, 99, .5);
+        border-color: rgb(235, 95, 99);
+    }
+}
+
+@keyframes carousel {
+    33%, 100% {
+        opacity: 0;
+    }
+
+      32% {
+        opacity: 1;
+      }
+}
+
+
+
+@keyframes indicator {
+    33%, 100% {
+        height: 0%;
+        background-color: white;
+    }
+    
+    0%{
+        height: 0%;
+    }
+    1%{
+        height: 3%;
+    }
+    2%{
+        height: 6%;
+    }
+    3%{
+        height: 9%;
+    }
+    4%{
+        height: 12%;
+    }
+    5%{
+        height: 15%;
+    }
+    6%{
+        height: 18%;
+    }
+    7%{
+        height: 21%;
+    }
+    8%{
+        height: 24%;
+    }
+    9%{
+        height: 27%;
+    }
+    10%{
+        height: 30%;
+    }
+    11%{
+        height: 33%;
+    }
+    12%{
+        height: 36%;
+    }
+    13%{
+        height: 39%;
+    }
+    14%{
+        height: 41%;
+    }
+    15%{
+        height: 44%;
+    }
+    16%{
+        height: 47%;
+    }
+    17%{
+        height: 50%;
+    }
+    18%{
+        height: 53%;
+    }
+    19%{
+        height: 56%;
+    }
+    20%{
+        height: 59%;
+    }
+    21%{
+        height: 62%;
+    }
+    22%{
+        height: 65%;
+    }
+
+    23%{
+        height: 68%;
+    }
+    24%{
+        height: 71%;
+    }
+    25%{
+        height: 74%;
+    }
+    26%{
+        height: 77%;
+    }
+    27%{
+        height: 80%;
+    }
+    28%{
+        height: 83%;
+    }
+    29%{
+        height: 86%;
+    }
+    30%{
+        height: 89%;
+    }
+    31%{
+        height: 92%;
+    }
+    32%{
+        height: 95%;
+    }
+    32.9%{
+        height: 100%;
+    }
+}
+
+@keyframes caption {
+    33%, 100% {
+        opacity: 0;
+        display: none;
+    }
+    0%, 32% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+//main
+.main-bg-red{
+    background-color: rgb(244, 13, 21);
+}
+.main-color-red{
+    color: rgb(244, 13, 21);
+}
+input:focus{
+    outline: none !important;
+    border-color: white;
+}
+
+// ycard
+.ycard-bg-blue{
+    background-color: rgba(2,122,151,1);
+}
+.ycard-color-blue{
+    color: rgba(2,122,151,1);
+}
+.ycard-bg-red{
+    background-color: rgba(251,67,60,1);
+}
+.ycard-color-red{
+    color: rgba(251,67,60,1);
+}
+
+.ycard-bg-yellow{
+    background-color: rgba(255,204,75,1);
+}
+.ycard-color-yellow{
+    color: rgba(255,204,75,1);
+}
+.ycard-bg-gray{
+    background-color: #BBBAC0;
+    opacity: 0.5;
+}
+.ycard-color-gray{
+    color: #BBBAC0;
+    opacity: 0.5;
+}
